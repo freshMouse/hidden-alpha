@@ -1,0 +1,16 @@
+{
+  "name": "hidden-alpha",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.17.2",
+    "eslint-config-google": "^0.9.1",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "firebase": "^4.3.0",
+    "pug": "^2.0.0-rc.3",
+    "socket.io": "^2.0.3"
+  }
+}

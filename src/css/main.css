@@ -1,0 +1,64 @@
+p, label {
+  background-color: #8bbf14;
+}
+
+.container {
+  width: 100%;
+  height: 85vh;
+  margin: none;
+  padding: none;
+}
+
+.login {
+  border: 30px solid #d6610e;
+
+  width: 50%;
+  height: 85vh;
+  background: red;
+  float: left;
+
+  text-align: center;
+}
+
+.reg {
+  border: 30px solid #d6610e;
+
+  height: 85vh;
+  background: blue;
+
+  text-align: center;
+}
+
+input[type='text'], input[type='password'] {
+  border-radius: 5px;
+
+  height: 20px;
+
+  padding: 2px;
+  margin: 50px;
+  background-color: #3e5477;
+}
+
+input[type='text']:focus, input[type='password']:focus {
+  border: 10px solid #138e43;
+}
+
+input[type='submit'] {
+  width: 70px;
+  height: 30px;
+
+  margin: 20px;
+}
+
+input[type='submit'] {
+  border-radius: 5px;
+
+  background-color: #838927;
+}
+
+input[type='submit']:hover {
+  border: 5px solid #251660;
+
+  background-color: #631a84;
+}
+

@@ -1,0 +1,45 @@
+doctype
+html
+  head
+    title hidden-alpha
+
+    link(rel='stylesheet', type='text/css', href='/css/main.css')
+  body
+    div.container
+      div.login
+        p Login
+        form(action='/login', method='post')
+          label Name:
+          input#name(type='text', name='name')
+
+          br
+          .
+            #[label Password:]
+            #[input#password(type='password', name='passsword')]
+
+          br
+          .
+            #[input#submit(type='submit')]
+
+      div.reg
+        p Make An Account
+        form(action='/reg', method='post')
+          label Name:
+          input#name(type='text', name='regName')
+
+          br
+          .
+            #[label Password:]
+            #[input#password(type='password', name='regPasssword')]
+
+          br
+          .
+            #[label Code:]
+            #[input#code(type='password', name='code')]
+
+          br
+          .
+            #[input#submit(type='submit')]
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='/js/main.js')
