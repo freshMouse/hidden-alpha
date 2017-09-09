@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title hidden-alpha
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js')
+  body
+    - const socket = io();
+
+    h1 HIDDEN-ALPHA
+
+    - socket.on('new group', (data) => {
+        div.groups
+          p#groupName {data.groupName}
+    -})
+
+

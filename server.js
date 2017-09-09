@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const firebase = require('firebase');
 const app = express();
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
 
 const config = {
     apiKey: "AIzaSyA95v8pnveM1oyxb9cSAI4Ra2-5zulSjXU",
@@ -65,7 +67,6 @@ app.post('/reg', function(req, res) {
 });
 
 app.get('/chat', function(req, res) {
-  console.log('chat');
   if(req.session.logged) {
     res.render(__dirname + '/src/chat.pug');
   } else {
@@ -73,5 +74,19 @@ app.get('/chat', function(req, res) {
   }
 });
 
-app.listen(8080);
+http.listen(8080);
 console.log('listening at 8080');
+
+io.on('connection', (socket) => {
+  console.log('1 new user');
+  socket.on('chat message', function(msg) {
+    //db.ref('/chats').set({
+
+    //});
+
+    socket.broadcast.emit('display message', msg);
+  });
+  socket.on('disconnect', function() {
+    console.log('1 user disconnected');
+  });
+});

@@ -1,0 +1,51 @@
+#messages {
+  list-style-type: none;
+  background-color: #373b42;
+
+  height: 100%;
+
+  font-size: 32px;
+
+  overflow-y: scroll;
+}
+
+#myself {
+
+  float: right;
+
+  background: #375482;
+}
+
+input[type='text'], input[type='password'], textarea {
+  border-radius: 5px;
+
+  height: 20px;
+
+  padding: none;
+  margin: none;
+  background-color: #3e5477;
+}
+
+input[type='text']:focus, input[type='password']:focus, textarea:focus {
+  border: 10px solid #138e43;
+}
+
+input[type='submit'] {
+  width: 70px;
+  height: 30px;
+
+  margin: none;
+}
+
+input[type='submit'] {
+  border-radius: 5px;
+
+  background-color: #838927;
+}
+
+input[type='submit']:hover {
+  border: 5px solid #251660;
+
+  background-color: #631a84;
+}
+

@@ -1,1 +1,15 @@
-p chat site!
+doctype html
+html
+  head
+    title chat
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    link(rel='stylesheet', href='/css/chat.css')
+  body
+    ul#messages
+
+    textarea#text
+    input(type='submit', value='send', autocomplete='off')#send
+
+    script(src='/js/chat.js')
+
