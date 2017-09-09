@@ -5,15 +5,28 @@
   height: 100%;
 
   font-size: 32px;
-
-  overflow-y: scroll;
 }
 
-#myself {
+.myself {
 
   float: right;
 
   background: #375482;
+
+  border-radius: 10px;
+
+  margin-right: 20px;
+}
+
+.otherPeople {
+  float: left;
+  background: #963ac1;
+
+  margin-left: 20px;
+}
+
+textarea {
+  resize: none;
 }
 
 input[type='text'], input[type='password'], textarea {
